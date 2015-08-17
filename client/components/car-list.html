@@ -1,0 +1,61 @@
+<template name="CarsWrapper">
+    <ul class="main-grid ">
+        <!--Used to size the grid items-->
+        <li class="grid-sizer "></li>
+        <!--Used to set the spacing between items-->
+        <li class="grid-gutter-sizer"></li>
+        {{#each Cars}}
+            <li class="grid-item">
+                <figure class="car card">
+                    <header class="card-image waves-effect waves-block waves-light">
+                        <img class="activator"
+                             src="http://blog.caranddriver.com/wp-content/uploads/2015/07/DSC_3358-626x417.jpg">
+                    </header>
+                    <footer class="card-content">
+                        <span class="card-title activator grey-text text-darken-4">{{title}}<i
+                                class="material-icons right">more_vert</i></span>
+                        <ul class="row center-align">
+                            <li class="col s4">
+                                <i class="material-icons">whatshot</i>
+
+                                <p>350hp</p>
+                            </li>
+                            <li class="col s4 ">
+                                <i class="material-icons">local_gas_station</i>
+
+                                <p>E85</p>
+                            </li>
+                            <li class="col s4 ">
+                                <i class="material-icons">schedule</i>
+
+                                <p>4.5s</p>
+                            </li>
+                        </ul>
+                    </footer>
+                    <figcaption class="card-reveal">
+                        <span class="card-title grey-text text-darken-4">Subaru BRZ Blue <i
+                                class="material-icons right">close</i></span>
+
+                        <p>Here is some more information about this product that is only revealed once clicked on.</p>
+                    </figcaption>
+                    <div class="card-action">
+                        <ul class="row center-align">
+                            <li class="col s6">
+                                <button class="btn-flat waves-effect red grey lighten-3">
+                                    <i class="material-icons">thumb_down</i>
+                                </button>
+
+                            </li>
+                            <li class="col s6">
+                                <button class="btn-flat waves-effect grey lighten-3">
+                                    <i class="material-icons">thumb_up</i>
+                                </button>
+                            </li>
+                        </ul>
+                    </div>
+                </figure>
+            </li>
+        {{/each}}
+
+    </ul>
+</template>

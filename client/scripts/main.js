@@ -1,4 +1,4 @@
-$(window).load(function(){
+$(window).ready(function(){
     // the "href" attribute of .modal-trigger must specify the modal ID that wants to be triggered
     $('.modal-trigger').leanModal();
     $('.datepicker').pickadate({
@@ -11,10 +11,8 @@ $(window).load(function(){
         itemSelector: '.grid-item',
         columnWidth: '.grid-sizer',
         gutter: '.grid-gutter-sizer',
-        percentPosition: true,
-
+        percentPosition: true
     });
-
 
 
 });
