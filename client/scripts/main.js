@@ -6,13 +6,16 @@ $(window).ready(function(){
         selectYears: 60 // Creates a dropdown of 15 years to control year
     });
 
-    //start masonry plugin
-    $('.main-grid').masonry({
-        itemSelector: '.grid-item',
-        columnWidth: '.grid-sizer',
-        gutter: '.grid-gutter-sizer',
-        percentPosition: true
-    });
+    ////start masonry plugin
+    //var $gridItems = $('.main-grid').find('.grid-item');
+    //console.log($gridItems);
+    //var $grid = $('.main-grid').masonry({
+    //    itemSelector: '.grid-item',
+    //    columnWidth: '.grid-sizer',
+    //    gutter: '.grid-gutter-sizer',
+    //    percentPosition: true,
+    //    isInitLayout: false,
+    //});
 
 
 });
